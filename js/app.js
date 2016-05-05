@@ -10,16 +10,6 @@ app.controller('myCtrl',['$scope',function($scope){
 		projectType:'Trang giới thiệu nhóm Challenge Team',
 		projectImage:'img/duan/challengeteam.png',
 		link:'http://challengeteam.github.io'
-	},{
-		projectName:'Dự án 2',
-		projectType:'Loại dự án',
-		projectImage:'',
-		link:''
-	},{
-		projectName:'Dự án 2',
-		projectType:'Loại dự án',
-		projectImage:'',
-		link:''
 	}];
 
 	$scope.services = [{
