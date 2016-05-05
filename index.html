@@ -21,10 +21,14 @@
         <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+        <!-- angularjs -->
+        <script src="angular/angular.min.js"></script>
+        <script src="js/app.js" type="text/javascript"></script>
         
     </head>
 
-    <body id="page-top" class="index">
+    <body id="page-top" class="index" ng-app="myApp" ng-controller="myCtrl">
 
         <!-- Navigation -->
         <nav class="navbar navbar-default navbar-fixed-top">
@@ -85,29 +89,13 @@
                     </div>
                 </div>
                 <div class="row text-center">
-                    <div class="col-md-4">
+                    <div class="col-md-4" ng-repeat="service in services">
                         <span class="fa-stack fa-4x">
                             <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
+                            <i class="fa {{service.icon}} fa-stack-1x fa-inverse"></i>
                         </span>
-                        <h4 class="service-heading">Thương mại điện tử</h4>
-                        <p class="text-muted">Các trang web buôn bán hàng online</p>
-                    </div>
-                    <div class="col-md-4">
-                        <span class="fa-stack fa-4x">
-                            <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h4 class="service-heading">Responsive Design</h4>
-                        <p class="text-muted">Thiết kế phù hợp mọi loại thiết bị</p>
-                    </div>
-                    <div class="col-md-4">
-                        <span class="fa-stack fa-4x">
-                            <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h4 class="service-heading">Bảo mật web</h4>
-                        <p class="text-muted">An ninh trên các trang web</p>
+                        <h4 class="service-heading">{{service.name}}</h4>
+                        <p class="text-muted">{{service.description}}</p>
                     </div>
                 </div>
             </div>
@@ -122,7 +110,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-4 col-sm-6 portfolio-item">
+                    <div class="col-md-4 col-sm-6 portfolio-item" ng-repeat='project in projects'>
                         <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
                             <div class="portfolio-hover">
                                 <div class="portfolio-hover-content">
@@ -132,78 +120,8 @@
                             <img src="" class="img-responsive" alt="">
                         </a>
                         <div class="portfolio-caption">
-                            <h4>Dự án 1</h4>
-                            <p class="text-muted">Loại dự án</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-6 portfolio-item">
-                        <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
-                            <div class="portfolio-hover">
-                                <div class="portfolio-hover-content">
-                                    <i class="fa fa-plus fa-3x"></i>
-                                </div>
-                            </div>
-                            <img src="" class="img-responsive" alt="">
-                        </a>
-                        <div class="portfolio-caption">
-                            <h4>Dự án 2</h4>
-                            <p class="text-muted">Loại dự án</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-6 portfolio-item">
-                        <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
-                            <div class="portfolio-hover">
-                                <div class="portfolio-hover-content">
-                                    <i class="fa fa-plus fa-3x"></i>
-                                </div>
-                            </div>
-                            <img src="" class="img-responsive" alt="">
-                        </a>
-                        <div class="portfolio-caption">
-                            <h4>Dự án 3</h4>
-                            <p class="text-muted">Loại dự án</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-6 portfolio-item">
-                        <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
-                            <div class="portfolio-hover">
-                                <div class="portfolio-hover-content">
-                                    <i class="fa fa-plus fa-3x"></i>
-                                </div>
-                            </div>
-                            <img src="" class="img-responsive" alt="">
-                        </a>
-                        <div class="portfolio-caption">
-                            <h4>Dự án 4</h4>
-                            <p class="text-muted">Loại dự án</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-6 portfolio-item">
-                        <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
-                            <div class="portfolio-hover">
-                                <div class="portfolio-hover-content">
-                                    <i class="fa fa-plus fa-3x"></i>
-                                </div>
-                            </div>
-                            <img src="" class="img-responsive" alt="">
-                        </a>
-                        <div class="portfolio-caption">
-                            <h4>Dự án 5</h4>
-                            <p class="text-muted">Loại dự án</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-6 portfolio-item">
-                        <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
-                            <div class="portfolio-hover">
-                                <div class="portfolio-hover-content">
-                                    <i class="fa fa-plus fa-3x"></i>
-                                </div>
-                            </div>
-                            <img src="" class="img-responsive" alt="">
-                        </a>
-                        <div class="portfolio-caption">
-                            <h4>Dự án 6</h4>
-                            <p class="text-muted">Loại dự án</p>
+                            <h4>{{project.projectName}}</h4>
+                            <p class="text-muted">{{project.projectType}}</p>
                         </div>
                     </div>
                 </div>
@@ -221,59 +139,17 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <ul class="timeline">
-                            <li>
+                            <li ng-repeat="member in members" class="{{member.class}}">
                                 <div class="timeline-image">
-                                    <img class="img-circle img-responsive" src="img/header-bg.jpg" alt="">
+                                    <img class="img-circle img-responsive" src="img/{{member.image}}" alt="">
                                 </div>
                                 <div class="timeline-panel">
                                     <div class="timeline-heading">
-                                        <h4>2009-2011</h4>
-                                        <h4 class="subheading">Đi học cấp 3</h4>
+                                        <h4>{{member.name}}</h4>
+                                        <h4 class="subheading">{{member.role}}</h4>
                                     </div>
                                     <div class="timeline-body">
-                                        <p class="text-muted">Học nhiều riết ngu</p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="timeline-inverted">
-                                <div class="timeline-image">
-                                    <img class="img-circle img-responsive" src="img/header-bg.jpg" alt="">
-                                </div>
-                                <div class="timeline-panel">
-                                    <div class="timeline-heading">
-                                        <h4>2012-2016</h4>
-                                        <h4 class="subheading">Đi học đại học</h4>
-                                    </div>
-                                    <div class="timeline-body">
-                                        <p class="text-muted">Học đại học KHTN</p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="timeline-image">
-                                    <img class="img-circle img-responsive" src="img/header-bg.jpg" alt="">
-                                </div>
-                                <div class="timeline-panel">
-                                    <div class="timeline-heading">
-                                        <h4>2016-now</h4>
-                                        <h4 class="subheading">Đéo biết</h4>
-                                    </div>
-                                    <div class="timeline-body">
-                                        <p class="text-muted">Chưa ra trường sao biết</p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="timeline-inverted">
-                                <div class="timeline-image">
-                                    <img class="img-circle img-responsive" src="img/header-bg.jpg" alt="">
-                                </div>
-                                <div class="timeline-panel">
-                                    <div class="timeline-heading">
-                                        <h4>now</h4>
-                                        <h4 class="subheading">K biết</h4>
-                                    </div>
-                                    <div class="timeline-body">
-                                        <p class="text-muted">K biết</p>
+                                        <p class="text-muted">{{member.description}}</p>
                                     </div>
                                 </div>
                             </li>
@@ -283,7 +159,7 @@
                                         <br>Go
                                         <br>Go!</h4>
                                 </div>
-                            </li>
+                            </li> 
                         </ul>
                     </div>
                 </div>
