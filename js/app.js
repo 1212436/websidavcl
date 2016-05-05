@@ -1,15 +1,15 @@
 var app = angular.module('myApp',[]);
 app.controller('myCtrl',['$scope',function($scope){
 	$scope.projects = [{
-		projectName:'Dự án 1',
-		projectType:'Loại dự án',
-		projectImage:'',
-		link:''
+		projectName:'MK SPORT',
+		projectType:'Bán dụng cụ thể thao',
+		projectImage:'img/duan/impulse.png',
+		link:'http://dochoithethao.somee.com'
 	},{
-		projectName:'Dự án 2',
-		projectType:'Loại dự án',
-		projectImage:'',
-		link:''
+		projectName:'Challenge Team',
+		projectType:'Trang giới thiệu nhóm Challenge Team',
+		projectImage:'img/duan/challengeteam.png',
+		link:'http://challengeteam.github.io'
 	},{
 		projectName:'Dự án 2',
 		projectType:'Loại dự án',
