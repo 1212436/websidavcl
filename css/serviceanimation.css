@@ -107,7 +107,7 @@
 
     animation-delay: 0s;
 
-    animation-iteration-count:infinite;
+    animation-iteration-count: 1;
 
     animation-timing-function:linear;
 
@@ -118,7 +118,7 @@
     -webkit-animation-name: left-to-right;
     -webkit-animation-duration: 2s;
     -webkit-animation-delay: 0s;
-    -webkit-animation-iteration-count:infinite;
+    -webkit-animation-iteration-count:1;
     -webkit-animation-timing-function:linear;
     -webkit-animation-play-state:paused;
     -webkit-animation-direction: normal;
@@ -126,7 +126,7 @@
     -moz-animation-name: left-to-right;
     -moz-animation-duration: 2s;
     -moz-animation-delay: 0s;
-    -moz-animation-iteration-count:infinite;
+    -moz-animation-iteration-count:1;
     -moz-animation-timing-function:linear;
     -moz-animation-play-state:paused;
     -moz-animation-direction: normal;
@@ -134,7 +134,7 @@
     -o-animation-name: left-to-right;
     -o-animation-duration: 2s;
     -o-animation-delay: 0s;
-    -o-animation-iteration-count:infinite;
+    -o-animation-iteration-count:1;
     -o-animation-timing-function:linear;
     -o-animation-play-state:paused;
     -o-animation-direction: normal;
