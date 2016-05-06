@@ -1,0 +1,94 @@
+/*Class icon luôn active*/
+.alway-active,.alway-active[class*='fa-']{
+    animation-play-state:running;
+    -webkit-animation-play-state:running;
+    -moz-animation-play-state:running;
+    -o-animation-play-state:running;
+}
+/*Class zoom icon từ 0.8 lên 1.2 trong 1s*/
+.icon-zoom {
+    animation-name: icon-zoom;
+
+    /*Thời gian hoạt zoom 1s*/
+    animation-duration: 1s;
+
+    /*Thời gian zoom tiếp theo 0s*/
+    animation-delay: 0s;
+
+    /*Số lần zoom */
+    animation-iteration-count:infinite;
+
+    /*effect*/
+    animation-timing-function:ease-in-out;
+
+    /*mặc định pause*/
+    animation-play-state:paused;
+
+    /*lặp lại*/
+    animation-direction: alternate;
+
+    -webkit-animation-name: icon-zoom;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-delay: 0s;
+    -webkit-animation-iteration-count:infinite;
+    -webkit-animation-timing-function:ease-in-out;
+    -webkit-animation-play-state:paused;
+    -webkit-animation-direction: alternate;
+
+    -moz-animation-name: icon-zoom;
+    -moz-animation-duration: 1s;
+    -moz-animation-delay: 0s;
+    -moz-animation-iteration-count:infinite;
+    -moz-animation-timing-function:ease-in-out;
+    -moz-animation-play-state:paused;
+    -moz-animation-direction: alternate;
+
+    -o-animation-name: icon-zoom;
+    -o-animation-duration: 1s;
+    -o-animation-delay: 0s;
+    -o-animation-iteration-count:infinite;
+    -o-animation-timing-function:ease-in-out;
+    -o-animation-play-state:paused;
+    -o-animation-direction: alternate;
+}
+
+@-webkit-keyframes icon-zoom {
+    0% {
+        -webkit-transform: scale(0.8);
+        transform: scale(0.8);
+    }
+    100% {
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+}
+@-moz-keyframes icon-zoom {
+    0% {
+        -moz-transform: scale(0.8);
+        transform: scale(0.8);
+    }
+    100% {
+        -moz-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+}
+@-o-keyframes icon-zoom {
+    0% {
+        -o-transform: scale(0.8);
+        transform: scale(0.8);
+    }
+    100% {
+        -o-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+}
+@keyframes icon-zoom {
+    0% {
+        -webkit-transform: scale(0.8);
+        transform: scale(0.8);
+    }
+    100% {
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+}
