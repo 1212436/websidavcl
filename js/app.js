@@ -26,56 +26,80 @@ app.controller('myCtrl', ['$scope', function ($scope) {
                 icon: 'fa-lock'
             }];
 
-        $scope.members = [{
-                id:'1',
-                name: 'Phạm Lưu Thanh Bình',
-                image: 'header-bg.jpg',
-                studyTime: '2009 - 2011',
-                description: 'Học quá giỏi',
-                role: 'Front-end developer',
-                class: '',
-                location: 'info-box-right'
-            }, {
-                id:'2',
-                name: 'Phan Hiền Triết',
-                image: 'header-bg.jpg',
-                studyTime: '2009 - 2011',
-                description: 'Học quá giỏi',
-                role: 'Front-end developer',
-                class: 'timeline-inverted',
-                location: 'info-box-left'
-            }, {
-                id:'3',
-                name: 'Phạm Sơn Trà',
-                image: 'header-bg.jpg',
-                studyTime: '2009 - 2011',
-                description: 'Học quá giỏi',
-                role: 'Back-end developer',
-                class: '',
-                location: 'info-box-right'
-            }, {
-                id:'4',
-                name: 'Nguyễn Việt Trung',
-                image: 'header-bg.jpg',
-                studyTime: '2009 - 2011',
-                description: 'Học quá giỏi',
-                role: 'Back-end developer',
-                class: 'timeline-inverted',
-                location: 'info-box-left'
-            }, {
-                id:'5',
-                name: 'Đoàn Xuân Trí',
-                image: 'header-bg.jpg',
-                studyTime: '2009 - 2011',
-                description: 'Học quá giỏi',
-                role: 'Project Manager',
-                class: '',
-                location: 'info-box-right'
-            }];   
-        $scope.closedetail = function (){
-            $scope.infobox = false;
+//        $scope.members = [{
+//                id: 1,
+//                name: 'Phạm Lưu Thanh Bình',
+//                image: 'header-bg.jpg',
+//                studyTime: '2009 - 2011',
+//                description: 'Học quá giỏi',
+//                role: 'Front-end developer',
+//                class: ''
+//            }, {
+//                id: 2,
+//                name: 'Phan Hiền Triết',
+//                image: 'header-bg.jpg',
+//                studyTime: '2009 - 2011',
+//                description: 'Học quá giỏi',
+//                role: 'Front-end developer',
+//                class: 'timeline-inverted'
+//            }, {
+//                id: 3,
+//                name: 'Phạm Sơn Trà',
+//                image: 'header-bg.jpg',
+//                studyTime: '2009 - 2011',
+//                description: 'Học quá giỏi',
+//                role: 'Back-end developer',
+//                class: ''
+//            }, {
+//                id: 4,
+//                name: 'Nguyễn Việt Trung',
+//                image: 'header-bg.jpg',
+//                studyTime: '2009 - 2011',
+//                description: 'Học quá giỏi',
+//                role: 'Back-end developer',
+//                class: 'timeline-inverted'
+//            }, {
+//                id: 5,
+//                name: 'Đoàn Xuân Trí',
+//                image: 'header-bg.jpg',
+//                studyTime: '2009 - 2011',
+//                description: 'Học quá giỏi',
+//                role: 'Project Manager',
+//                class: ''
+//            }];
+        $scope.infobox1 = false;
+        $scope.infobox2 = false;
+        $scope.infobox3 = false;
+        $scope.infobox4 = false;
+        $scope.infobox5 = false;
+
+        $scope.closedetail = function () {
+            $scope.infobox1 = false;
+            $scope.infobox2 = false;
+            $scope.infobox3 = false;
+            $scope.infobox4 = false;
+            $scope.infobox5 = false;
         };
-        $scope.showdetail = function (){
-            $scope.infobox = true;
+        $scope.showdetail = function (id) {
+            if (id === 1)
+            {
+                $scope.infobox1 = true;
+            }
+            if (id === 2)
+            {
+                $scope.infobox2 = true;
+            }
+            if (id === 3)
+            {
+                $scope.infobox3 = true;
+            }
+            if (id === 4)
+            {
+                $scope.infobox4 = true;
+            }
+            if (id === 5)
+            {
+                $scope.infobox5 = true;
+            }
         };
     }]);
